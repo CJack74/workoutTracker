@@ -1,1 +1,2 @@
-const Workout = require("../models /workout")
+  
+const db = require("../models");
