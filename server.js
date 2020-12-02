@@ -11,3 +11,20 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
+
+//Mongoose connection to workout database
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+  useNewUrlParser: true
+});
+
+
+
+
+
+// routes
+app.use(require("./routes/api-routes.js"));
+
+
+app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}!`);
+  });
