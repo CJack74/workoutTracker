@@ -6,3 +6,8 @@ You will need to run npm init to get all the required node modules. If running l
 
 ## Usage
 Primarily made for homework assignment but could also be used for its intended purpose.
+
+## Tech/Framework used
+Frontend: HTML, CSS
+
+Backend: Express, Mongoose, Path
